@@ -1,15 +1,11 @@
 <template>
-
-  <div class="content">
-    <div class="content-inner">
-      <div class="content-text-wrap">
-        <article v-for="content in contents" :key="content.id">
-          <h1> {{ content.title }} </h1>
-        </article>
-      </div>
-    </div>
+  <main>
+    <div class="content">
+    <article v-for="content in contents" :key="content.title" :content="content" class="article">
+      <h1> {{ content.title }} </h1>
+    </article>
   </div>
-
+  </main>
 </template>
 
 <script>
@@ -38,7 +34,3 @@ export default {
   }
 }
 </script>
-
-<style src="../assets/style/contents.css">
-
-</style>

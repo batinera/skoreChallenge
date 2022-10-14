@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Contents from "../components/Contents.vue";
+import Contents from "@/components/Contents.vue";
 
 export default {
   name: 'index',
@@ -16,6 +16,4 @@ export default {
 
 </script>
 
-<style src="../assets/style/index.css">
-
-</style>
+<style src="@/assets/style/index.css"></style>

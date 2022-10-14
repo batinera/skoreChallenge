@@ -13,9 +13,30 @@ body {
 main {
     width: 100vw;
     min-height: 100vh;
-    overflow: hidden;
     background-color: #EEE;
-    display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1 1 33.333%;
+    width: 100%;
+    padding: 50px
+}
+
+.content {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.content article {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    padding: 30px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    *, main, body, .content, article {
+        width: auto;
+    }
 }
